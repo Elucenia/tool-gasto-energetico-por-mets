@@ -1,0 +1,69 @@
+[
+  {
+    "label": "8 METs, 70 kg, 30 min: 9,8 kcal/min × 30 = 294 kcal; 240 MET-min",
+    "input": {
+      "met": 8,
+      "peso": 70,
+      "min": 30
+    },
+    "expected": {
+      "raw": {
+        "kcal": 294,
+        "kcalmin": 9.8,
+        "metmin": 240
+      },
+      "level": "info",
+      "verdict": "vigorosa"
+    },
+    "originalInput": {
+      "met": 8,
+      "peso": 70,
+      "min": 30
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "3,5 METs, 80 kg, 45 min, 4×/semana: 220,5 kcal; 630 MET-min/semana",
+    "input": {
+      "met": 3.5,
+      "peso": 80,
+      "min": 45,
+      "sessoes": 4
+    },
+    "expected": {
+      "raw": {
+        "kcal": 220.5,
+        "metmin": 157.5,
+        "semana": 630
+      },
+      "verdict": "moderada"
+    },
+    "originalInput": {
+      "met": 3.5,
+      "peso": 80,
+      "min": 45,
+      "sessoes": 4
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "2,5 METs, 60 kg, 60 min: 157,5 kcal (leve)",
+    "input": {
+      "met": 2.5,
+      "peso": 60,
+      "min": 60
+    },
+    "expected": {
+      "raw": {
+        "kcal": 157.5
+      },
+      "verdict": "leve"
+    },
+    "originalInput": {
+      "met": 2.5,
+      "peso": 60,
+      "min": 60
+    },
+    "expandedZeroOptions": []
+  }
+]
