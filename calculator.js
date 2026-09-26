@@ -1,11 +1,11 @@
-/* tool-gasto-energetico-por-mets · Elucenia · https://github.com/Elucenia/tool-gasto-energetico-por-mets
-   Copyright (c) 2026 Elucenia · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
+/* tool-gasto-energetico-por-mets · ELUCENIA · https://github.com/Elucenia/tool-gasto-energetico-por-mets
+   Copyright (c) 2026 ELUCENIA · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
    Standalone integration. Package metadata and rights: README.md. */
 (function(root){'use strict';
 function freeze(value){if(value&&typeof value==='object'){for(const item of Object.values(value))freeze(item);Object.freeze(value);}return value;}
 const TOOL=freeze({"id":"gasto-energetico-por-mets","title":"Gasto energético por METs","fields":[["met","Intensidade da atividade (valor do Compendium)","num",{"min":1,"max":25,"step":0.1,"unit":"METs","ph":"8"}],["peso","Peso","num",{"min":20,"max":300,"step":0.1,"unit":"kg","ph":"70"}],["min","Duração da sessão","num",{"min":1,"max":600,"step":1,"unit":"min","ph":"30"}],["sessoes","Sessões por semana","num",{"min":1,"max":14,"step":1,"ph":"3","opt":true}]],"config":null,"reviewStatus":"needs-review","clinicalValidation":"not-performed"});
 const window={};
-/* Elucenia arithmetic registry. No DOM access, storage, telemetry or network requests. */
+/* ELUCENIA arithmetic registry. No DOM access, storage, telemetry or network requests. */
 (function(root){
   'use strict';
   const CALC={fn:Object.create(null)};

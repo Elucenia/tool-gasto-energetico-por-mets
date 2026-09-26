@@ -1,7 +1,7 @@
 {
   "name": "@elucenia/tool-gasto-energetico-por-mets",
   "version": "0.1.0",
-  "description": "Gasto energético por METs · Elucenia: reprodução técnica de fórmula ou escore clínico, sem dependências, para navegador e Node.js.",
+  "description": "Gasto energético por METs · ELUCENIA: reprodução técnica de fórmula ou escore clínico, sem dependências, para navegador e Node.js.",
   "keywords": [
     "elucenia",
     "medical-calculator",
