@@ -1,0 +1,389 @@
+{
+  "id": "gasto-energetico-por-mets",
+  "at": "2026-10-05T17:29:38.428Z",
+  "adapter": {
+    "file": "apps/website/private/tool-code/gasto-energetico-por-mets/calculator.js",
+    "bytes": 5106,
+    "sha256": "851eb5b0d457f830e9b8a1b1d61fdb8911666253c42a7ffe3c45790f878f688d"
+  },
+  "cases": [
+    {
+      "name": "8 METs, 70 kg, 30 min: 9,8 kcal/min × 30 = 294 kcal; 240 MET-min",
+      "input": {
+        "met": 8,
+        "peso": 70,
+        "min": 30
+      },
+      "obtained": {
+        "id": "gasto-energetico-por-mets",
+        "main": [
+          "294",
+          "kcal"
+        ],
+        "label": "Gasto energético da sessão",
+        "raw": {
+          "kcal": 294,
+          "kcalmin": 9.8,
+          "metmin": 240,
+          "semana": null
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.kcal",
+          "expected": 294,
+          "obtained": 294,
+          "tolerance": 1e-8,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.kcalmin",
+          "expected": 9.8,
+          "obtained": 9.8,
+          "tolerance": 0.050000010000000004,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.metmin",
+          "expected": 240,
+          "obtained": 240,
+          "tolerance": 1e-8,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.kcal",
+          "expected": 294,
+          "obtained": 294,
+          "tolerance": 2.94e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.kcalmin",
+          "expected": 9.8,
+          "obtained": 9.8,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.metmin",
+          "expected": 240,
+          "obtained": 240,
+          "tolerance": 2.4e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.semana",
+          "expected": null,
+          "obtained": null,
+          "scope": "Existing source-audit transport regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "294",
+          "obtained": "294",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "kcal",
+          "obtained": "kcal",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        },
+        {
+          "key": "verdict",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "3,5 METs, 80 kg, 45 min, 4×/semana: 220,5 kcal; 630 MET-min/semana",
+      "input": {
+        "met": 3.5,
+        "peso": 80,
+        "min": 45,
+        "sessoes": 4
+      },
+      "obtained": {
+        "id": "gasto-energetico-por-mets",
+        "main": [
+          "221",
+          "kcal"
+        ],
+        "label": "Gasto energético da sessão",
+        "raw": {
+          "kcal": 220.50000000000003,
+          "kcalmin": 4.9,
+          "metmin": 157.5,
+          "semana": 630
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.kcal",
+          "expected": 220.5,
+          "obtained": 220.50000000000003,
+          "tolerance": 0.050000010000000004,
+          "difference": 2.842170943040401e-14,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.metmin",
+          "expected": 157.5,
+          "obtained": 157.5,
+          "tolerance": 0.050000010000000004,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.semana",
+          "expected": 630,
+          "obtained": 630,
+          "tolerance": 1e-8,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.kcal",
+          "expected": 220.50000000000003,
+          "obtained": 220.50000000000003,
+          "tolerance": 2.2050000000000001e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.kcalmin",
+          "expected": 4.9,
+          "obtained": 4.9,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.metmin",
+          "expected": 157.5,
+          "obtained": 157.5,
+          "tolerance": 1.575e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.semana",
+          "expected": 630,
+          "obtained": 630,
+          "tolerance": 6.3e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "221",
+          "obtained": "221",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "kcal",
+          "obtained": "kcal",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "verdict",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "2,5 METs, 60 kg, 60 min: 157,5 kcal (leve)",
+      "input": {
+        "met": 2.5,
+        "peso": 60,
+        "min": 60
+      },
+      "obtained": {
+        "id": "gasto-energetico-por-mets",
+        "main": [
+          "158",
+          "kcal"
+        ],
+        "label": "Gasto energético da sessão",
+        "raw": {
+          "kcal": 157.5,
+          "kcalmin": 2.625,
+          "metmin": 150,
+          "semana": null
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.kcal",
+          "expected": 157.5,
+          "obtained": 157.5,
+          "tolerance": 0.050000010000000004,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.kcal",
+          "expected": 157.5,
+          "obtained": 157.5,
+          "tolerance": 1.575e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.kcalmin",
+          "expected": 2.625,
+          "obtained": 2.625,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.metmin",
+          "expected": 150,
+          "obtained": 150,
+          "tolerance": 1.5e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.semana",
+          "expected": null,
+          "obtained": null,
+          "scope": "Existing source-audit transport regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "158",
+          "obtained": "158",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "kcal",
+          "obtained": "kcal",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "verdict",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    }
+  ],
+  "refusals": {
+    "passed": 42,
+    "failed": 0,
+    "failures": []
+  },
+  "sourceNodeBrowserVmParity": true,
+  "actualBrowserDomVerified": false,
+  "newIndependentOracle": false,
+  "currentActualR6HttpEvidence": "pending",
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false
+}

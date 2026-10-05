@@ -1,6 +1,14 @@
 [
   {
-    "label": "8 METs, 70 kg, 30 min: 9,8 kcal/min × 30 = 294 kcal; 240 MET-min",
+    "id": "gasto-energetico-por-mets",
+    "kind": "native-source-reference",
+    "index": 0,
+    "name": "8 METs, 70 kg, 30 min: 9,8 kcal/min × 30 = 294 kcal; 240 MET-min",
+    "originalInput": {
+      "met": 8,
+      "peso": 70,
+      "min": 30
+    },
     "input": {
       "met": 8,
       "peso": 70,
@@ -15,15 +23,39 @@
       "level": "info",
       "verdict": "vigorosa"
     },
-    "originalInput": {
-      "met": 8,
-      "peso": 70,
-      "min": 30
+    "recordedResult": {
+      "main": [
+        "294",
+        "kcal"
+      ],
+      "label": "Gasto energético da sessão",
+      "raw": {
+        "kcal": 294,
+        "kcalmin": 9.8,
+        "metmin": 240,
+        "semana": null
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "3,5 METs, 80 kg, 45 min, 4×/semana: 220,5 kcal; 630 MET-min/semana",
+    "id": "gasto-energetico-por-mets",
+    "kind": "native-source-reference",
+    "index": 1,
+    "name": "3,5 METs, 80 kg, 45 min, 4×/semana: 220,5 kcal; 630 MET-min/semana",
+    "originalInput": {
+      "met": 3.5,
+      "peso": 80,
+      "min": 45,
+      "sessoes": 4
+    },
     "input": {
       "met": 3.5,
       "peso": 80,
@@ -38,16 +70,38 @@
       },
       "verdict": "moderada"
     },
-    "originalInput": {
-      "met": 3.5,
-      "peso": 80,
-      "min": 45,
-      "sessoes": 4
+    "recordedResult": {
+      "main": [
+        "221",
+        "kcal"
+      ],
+      "label": "Gasto energético da sessão",
+      "raw": {
+        "kcal": 220.50000000000003,
+        "kcalmin": 4.9,
+        "metmin": 157.5,
+        "semana": 630
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "2,5 METs, 60 kg, 60 min: 157,5 kcal (leve)",
+    "id": "gasto-energetico-por-mets",
+    "kind": "native-source-reference",
+    "index": 2,
+    "name": "2,5 METs, 60 kg, 60 min: 157,5 kcal (leve)",
+    "originalInput": {
+      "met": 2.5,
+      "peso": 60,
+      "min": 60
+    },
     "input": {
       "met": 2.5,
       "peso": 60,
@@ -59,11 +113,26 @@
       },
       "verdict": "leve"
     },
-    "originalInput": {
-      "met": 2.5,
-      "peso": 60,
-      "min": 60
+    "recordedResult": {
+      "main": [
+        "158",
+        "kcal"
+      ],
+      "label": "Gasto energético da sessão",
+      "raw": {
+        "kcal": 157.5,
+        "kcalmin": 2.625,
+        "metmin": 150,
+        "semana": null
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   }
 ]

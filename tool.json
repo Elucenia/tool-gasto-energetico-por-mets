@@ -5,6 +5,7 @@
     "short": "Calorias e MET-minutos de uma atividade",
     "desc": "Calcule o gasto calórico de uma atividade física a partir do valor em METs do Compendium, do peso e da duração, e o volume semanal em MET-minutos.",
     "lead": "Converte a intensidade de uma atividade em METs em gasto energético (kcal) e em volume de exercício (MET-min), para prescrição e aconselhamento.",
+    "kind": "Calculadora",
     "spec": [
       "medicina-esportiva",
       "nutrologia",
@@ -62,34 +63,6 @@
       ]
     ],
     "formula": "<p><strong>kcal/min</strong> = METs × 3,5 × peso (kg) ÷ 200 (1 MET = 3,5 mL de O<sub>2</sub>/kg/min; cerca de 5 kcal por litro de O<sub>2</sub>).</p><p><strong>MET-min</strong> = METs × minutos. Uma aproximação equivalente é kcal ≈ METs × peso (kg) × horas.</p>",
-    "table": [
-      [
-        "METs",
-        "Intensidade absoluta (ACSM)"
-      ],
-      [
-        "&lt; 3",
-        "Leve"
-      ],
-      [
-        "3 a 5,9",
-        "Moderada"
-      ],
-      [
-        "≥ 6",
-        "Vigorosa"
-      ],
-      [
-        "500 a 1.000 MET-min/semana",
-        "Volume-alvo para adultos"
-      ]
-    ],
-    "tips": [
-      "Consulte o valor da atividade no <strong>Compendium of Physical Activities 2024</strong>, que traz valores específicos para cada atividade e velocidade.",
-      "O MET padrão (3,5 mL/kg/min) superestima o gasto de repouso de idosos, obesos e mulheres; o gasto real pode ser 10 a 20% menor.",
-      "O gasto calculado é o <strong>bruto</strong>; para o gasto líquido do exercício, subtraia 1 MET (o repouso).",
-      "Para estimar a capacidade funcional máxima em METs a partir do teste ergométrico, veja VO₂ e METs."
-    ],
     "sources": [
       [
         "Herrmann SD et al. 2024 Adult Compendium of Physical Activities: a third update of the energy costs of human activities. J Sport Health Sci, 2024.",
@@ -150,9 +123,6 @@
         }
       ]
     ],
-    "kind": "Calculadora",
-    "config": null,
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -161,17 +131,353 @@
       "failures": []
     },
     "independentArithmeticTest": {
-      "status": "not-tested",
-      "testedAt": null,
-      "total": 0,
-      "passed": 0,
-      "cases": []
+      "status": "passed",
+      "testedAt": "2026-10-04T15:23:41.730Z",
+      "total": 864,
+      "passed": 864,
+      "embeddedCasesAreSubset": true,
+      "embeddedCaseCount": 4,
+      "caseStorage": {
+        "mode": "complete-downloadable-bank-with-inline-subset",
+        "file": "independent-source-cases.json",
+        "sha256": "3e7dafe897ed2269fb9aa0639a8e465cbc4b29b23d7713b922ebc4cc6bc3d3e4",
+        "total": 864,
+        "expectedEvidence": {
+          "file": "reports/review-20261003/met-energy-independent-oracle-final25.json",
+          "sha256": "14b421a45f3075046c0d8d573ba0d03ea643dd0e13072341f4a308abd6342efb"
+        },
+        "obtainedEvidence": {
+          "file": "reports/review-20261003/met-energy-independent-check-final25-r3.json",
+          "sha256": "870d0b72ba6da8b03ab23f026f05f351ee07765a8e2b9bab23f03e7e133f9c6d"
+        },
+        "packagingRequirement": "Copy complete bank into fresh package25. Frozen24 package excludes new evidence and repair."
+      },
+      "scope": "Independent Fraction expectations persisted before engine imports. Standard MET unit conversion plus entered duration/session multiplication only. Does not validate activity assignment, measured resting metabolism, cancer-specific exercise suitability, individual calorimetry, oxygen equivalence, clinical management or professional-language review. Only four exposed continuous raw quantities kcal, kcalmin, metmin and semana are checked. Separately reviewed display repair shows two decimals for positive session kcal below one; that precision is a presentation choice, not improved physiological accuracy.",
+      "sources": [
+        {
+          "url": "https://pacompendium.com/unite-conversions/",
+          "edition": "Official Compendium project current Unit Conversions page, read2026-10-04",
+          "readScope": "Work Unit Conversions: 1MET=3.5mL/kg/min; L/min to kcal/min factor5; METs×3.5×bodykg/200 kcal/min. Direct HTML retrieved.",
+          "formulaConformance": "Named unit-conversion expression only; no full individual physiological method approval."
+        },
+        {
+          "url": "https://pacompendium.com/",
+          "edition": "2024 Adult Compendium official project",
+          "readScope": "Terms standard MET definition and2024 edition identity read; all1114 activity entries not reviewed."
+        },
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10818145/",
+          "edition": "Herrmann2024 doi10.1016/j.jshs.2023.10.010",
+          "readScope": "Indexed introduction and2.5 excerpts read; direct page recaptcha prevented integral retrieval. Full-paper review not claimed."
+        }
+      ],
+      "evidencePath": "reports/review-20261003/met-energy-independent-check-final25-r3.json",
+      "evidenceSha256": "870d0b72ba6da8b03ab23f026f05f351ee07765a8e2b9bab23f03e7e133f9c6d",
+      "peerEvidencePath": "reports/review-20261003/met-positive-display-independent-review-final25.json",
+      "peerEvidenceSha256": "21b7430ac79ba4e091fbf73bf748e41cd5e1e27e8b6bf6adde3301d96878088d",
+      "implementations": [
+        {
+          "file": "apps/website/private/tool-code/gasto-energetico-por-mets/calculator.js",
+          "sha256": "851eb5b0d457f830e9b8a1b1d61fdb8911666253c42a7ffe3c45790f878f688d",
+          "beforeSha256": "6ed5a593ca76cea266a88f2cea3db6fc641ac170cd3a8a5becb03d5a0424a879"
+        },
+        {
+          "file": "apps/dashboard/private/tool-code/gasto-energetico-por-mets/calculator.js",
+          "sha256": "851eb5b0d457f830e9b8a1b1d61fdb8911666253c42a7ffe3c45790f878f688d",
+          "beforeSha256": "6ed5a593ca76cea266a88f2cea3db6fc641ac170cd3a8a5becb03d5a0424a879"
+        },
+        {
+          "file": "apps/command-center/private/tool-code/gasto-energetico-por-mets/calculator.js",
+          "sha256": "851eb5b0d457f830e9b8a1b1d61fdb8911666253c42a7ffe3c45790f878f688d",
+          "beforeSha256": "6ed5a593ca76cea266a88f2cea3db6fc641ac170cd3a8a5becb03d5a0424a879"
+        }
+      ],
+      "actualAdapterExecutions": 2592,
+      "newStagedAdapterExecutions": 2592,
+      "numericPolicy": {
+        "preparedAt": "2026-10-04T15:03:46.210Z",
+        "scope": "Physical energy and standard-MET duration quantities are continuous outputs even when the exact rational happens to be an integer. Allfour raw output variables are compared using the already declared4EPS relative bound. This does not permit tolerance for enum keys, thresholds, counts, diagnoses or categories; none of those variables is checked here.",
+        "outputTypes": {
+          "kcal": "continuous-energy-kcal",
+          "kcalmin": "continuous-energy-kcal-per-minute",
+          "metmin": "continuous-met-minute-product",
+          "semana": "continuous-weekly-met-minute-product"
+        },
+        "relativeBound": 8.881784197001252e-16,
+        "absoluteFloor": 0,
+        "preservedFirstPass": {
+          "file": "met-energy-independent-check-final25.json",
+          "sha256": "b9b1d1ad10396a6940e61ffb572f42cded68c94070aa3900e2482b0632ca3821",
+          "failed": 36,
+          "reason": "Harness applied discrete integer exactness based on Number.isInteger(expected), despite these quantities remaining continuous physical quantities. Differences are retained in the original report. Existing noninteger tolerance is not increased."
+        },
+        "appWrites": false
+      },
+      "qualifications": [
+        "Two decimals improve displayed nonzero bounded session estimates, not physiological accuracy.",
+        "Other verdicts, training targets, activity assignments, oxygen equivalence and clinical suitability were not assessed.",
+        "No portal or HTTP execution by this reviewer; guarded root application and fresh build remain separate.",
+        "864 grid inputs counted once. The peer supplemental five inputs are explicitly not added. Four continuous exposed quantities only; original fixtures/tolerances and every raw formula remain unchanged."
+      ],
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed",
+      "sourceRightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed",
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "METstandard 3,5 m LO 2/kg/min; kcal/min=MET×3,5×kg/200; referência Compendium 2024",
+    "implementationVersion": "gasto-energetico-por-mets@native-2026-10-03+851eb5b0d457",
+    "currentMethodSource": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10818145/",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "kcal/min = METs × 3,5 × peso (kg) ÷ 200 (1 MET = 3,5 mL de O 2 /kg/min; cerca de 5 kcal por litro de O 2 ). MET-min = METs × minutos. Uma aproximação equivalente é kcal ≈ METs × peso (kg) × horas.",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "met",
+            "label": "Intensidade da atividade (valor do Compendium)",
+            "type": "num",
+            "min": 1,
+            "max": 25,
+            "unit": "METs",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "peso",
+            "label": "Peso",
+            "type": "num",
+            "min": 20,
+            "max": 300,
+            "unit": "kg",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "min",
+            "label": "Duração da sessão",
+            "type": "num",
+            "min": 1,
+            "max": 600,
+            "unit": "min",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "sessoes",
+            "label": "Sessões por semana",
+            "type": "num",
+            "min": 1,
+            "max": 14,
+            "optional": true,
+            "options": null
+          }
+        ],
+        "hash": "e6dd556be6a2d22f3b7403a2461d0cc8b2ebd5c5f9771ae905309033e2b7093d"
+      },
+      "sourceEditions": [
+        {
+          "citation": "Herrmann SD et al. 2024 Adult Compendium of Physical Activities: a third update of the energy costs of human activities. J Sport Health Sci, 2024.",
+          "url": "https://doi.org/10.1016/j.jshs.2023.10.010",
+          "class": "primary-publication-full-text-retrieved",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": true,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "2024 Adult Compendium of Physical Activities: A third update of the energy costs of human activities.",
+            "year": "2024",
+            "firstPublicationDate": "2024-01-01",
+            "doi": "10.1016/j.jshs.2023.10.010",
+            "pmid": "38242596",
+            "pmcid": "PMC10818145",
+            "journal": "Journal of sport and health science",
+            "authors": "Herrmann SD, Willis EA, Ainsworth BE, Barreira TV, Hastert M, Kracht CL, Schuna JM, Cai Z, Quan M, Tudor-Locke C, Whitt-Glover MC, Jacobs DR."
+          },
+          "primaryPublicationUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10818145/",
+          "abstractAvailable": true,
+          "fullTextSha256": "ea60e4a8f784a47ba91c91314e98e74bd9d9c86e5bb67a3632d81933f75080b8",
+          "abstractSha256": "ba9bfe98aa3e98a12efec4ecb0c5e5fb48ea379f83fd2d813bdc8cb106a4b087",
+          "matchedBy": "exact-DOI-or-PMID"
+        },
+        {
+          "citation": "Garber CE et al. Quantity and quality of exercise for developing and maintaining cardiorespiratory, musculoskeletal, and neuromotor fitness in apparently healthy adults. Med Sci Sports Exerc, 2011.",
+          "url": "https://doi.org/10.1249/MSS.0b013e318213fefb",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "American College of Sports Medicine position stand. Quantity and quality of exercise for developing and maintaining cardiorespiratory, musculoskeletal, and neuromotor fitness in apparently healthy adults: guidance for prescribing exercise.",
+            "year": "2011",
+            "firstPublicationDate": "2011-07-01",
+            "doi": "10.1249/mss.0b013e318213fefb",
+            "pmid": "21694556",
+            "journal": "Medicine and science in sports and exercise",
+            "authors": "Garber CE, Blissmer B, Deschenes MR, Franklin BA, Lamonte MJ, Lee IM, Nieman DC, Swain DP, American College of Sports Medicine."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/21694556/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "9da8c6a6d291171c6d789fc0a0cab12a0408992ac6bdce52aba589301b68009c",
+          "matchedBy": "exact-DOI-or-PMID"
+        }
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-10-04T15:23:41.730Z",
+        "total": 864,
+        "passed": 864,
+        "embeddedCasesAreSubset": true,
+        "embeddedCaseCount": 4,
+        "caseStorage": {
+          "mode": "complete-downloadable-bank-with-inline-subset",
+          "file": "independent-source-cases.json",
+          "sha256": "3e7dafe897ed2269fb9aa0639a8e465cbc4b29b23d7713b922ebc4cc6bc3d3e4",
+          "total": 864,
+          "expectedEvidence": {
+            "file": "reports/review-20261003/met-energy-independent-oracle-final25.json",
+            "sha256": "14b421a45f3075046c0d8d573ba0d03ea643dd0e13072341f4a308abd6342efb"
+          },
+          "obtainedEvidence": {
+            "file": "reports/review-20261003/met-energy-independent-check-final25-r3.json",
+            "sha256": "870d0b72ba6da8b03ab23f026f05f351ee07765a8e2b9bab23f03e7e133f9c6d"
+          },
+          "packagingRequirement": "Copy complete bank into fresh package25. Frozen24 package excludes new evidence and repair."
+        },
+        "scope": "Independent Fraction expectations persisted before engine imports. Standard MET unit conversion plus entered duration/session multiplication only. Does not validate activity assignment, measured resting metabolism, cancer-specific exercise suitability, individual calorimetry, oxygen equivalence, clinical management or professional-language review. Only four exposed continuous raw quantities kcal, kcalmin, metmin and semana are checked. Separately reviewed display repair shows two decimals for positive session kcal below one; that precision is a presentation choice, not improved physiological accuracy.",
+        "sources": [
+          {
+            "url": "https://pacompendium.com/unite-conversions/",
+            "edition": "Official Compendium project current Unit Conversions page, read2026-10-04",
+            "readScope": "Work Unit Conversions: 1MET=3.5mL/kg/min; L/min to kcal/min factor5; METs×3.5×bodykg/200 kcal/min. Direct HTML retrieved.",
+            "formulaConformance": "Named unit-conversion expression only; no full individual physiological method approval."
+          },
+          {
+            "url": "https://pacompendium.com/",
+            "edition": "2024 Adult Compendium official project",
+            "readScope": "Terms standard MET definition and2024 edition identity read; all1114 activity entries not reviewed."
+          },
+          {
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10818145/",
+            "edition": "Herrmann2024 doi10.1016/j.jshs.2023.10.010",
+            "readScope": "Indexed introduction and2.5 excerpts read; direct page recaptcha prevented integral retrieval. Full-paper review not claimed."
+          }
+        ],
+        "evidencePath": "reports/review-20261003/met-energy-independent-check-final25-r3.json",
+        "evidenceSha256": "870d0b72ba6da8b03ab23f026f05f351ee07765a8e2b9bab23f03e7e133f9c6d",
+        "peerEvidencePath": "reports/review-20261003/met-positive-display-independent-review-final25.json",
+        "peerEvidenceSha256": "21b7430ac79ba4e091fbf73bf748e41cd5e1e27e8b6bf6adde3301d96878088d",
+        "implementations": [
+          {
+            "file": "apps/website/private/tool-code/gasto-energetico-por-mets/calculator.js",
+            "sha256": "851eb5b0d457f830e9b8a1b1d61fdb8911666253c42a7ffe3c45790f878f688d",
+            "beforeSha256": "6ed5a593ca76cea266a88f2cea3db6fc641ac170cd3a8a5becb03d5a0424a879"
+          },
+          {
+            "file": "apps/dashboard/private/tool-code/gasto-energetico-por-mets/calculator.js",
+            "sha256": "851eb5b0d457f830e9b8a1b1d61fdb8911666253c42a7ffe3c45790f878f688d",
+            "beforeSha256": "6ed5a593ca76cea266a88f2cea3db6fc641ac170cd3a8a5becb03d5a0424a879"
+          },
+          {
+            "file": "apps/command-center/private/tool-code/gasto-energetico-por-mets/calculator.js",
+            "sha256": "851eb5b0d457f830e9b8a1b1d61fdb8911666253c42a7ffe3c45790f878f688d",
+            "beforeSha256": "6ed5a593ca76cea266a88f2cea3db6fc641ac170cd3a8a5becb03d5a0424a879"
+          }
+        ],
+        "actualAdapterExecutions": 2592,
+        "newStagedAdapterExecutions": 2592,
+        "numericPolicy": {
+          "preparedAt": "2026-10-04T15:03:46.210Z",
+          "scope": "Physical energy and standard-MET duration quantities are continuous outputs even when the exact rational happens to be an integer. Allfour raw output variables are compared using the already declared4EPS relative bound. This does not permit tolerance for enum keys, thresholds, counts, diagnoses or categories; none of those variables is checked here.",
+          "outputTypes": {
+            "kcal": "continuous-energy-kcal",
+            "kcalmin": "continuous-energy-kcal-per-minute",
+            "metmin": "continuous-met-minute-product",
+            "semana": "continuous-weekly-met-minute-product"
+          },
+          "relativeBound": 8.881784197001252e-16,
+          "absoluteFloor": 0,
+          "preservedFirstPass": {
+            "file": "met-energy-independent-check-final25.json",
+            "sha256": "b9b1d1ad10396a6940e61ffb572f42cded68c94070aa3900e2482b0632ca3821",
+            "failed": 36,
+            "reason": "Harness applied discrete integer exactness based on Number.isInteger(expected), despite these quantities remaining continuous physical quantities. Differences are retained in the original report. Existing noninteger tolerance is not increased."
+          },
+          "appWrites": false
+        },
+        "qualifications": [
+          "Two decimals improve displayed nonzero bounded session estimates, not physiological accuracy.",
+          "Other verdicts, training targets, activity assignments, oxygen equivalence and clinical suitability were not assessed.",
+          "No portal or HTTP execution by this reviewer; guarded root application and fresh build remain separate.",
+          "864 grid inputs counted once. The peer supplemental five inputs are explicitly not added. Four continuous exposed quantities only; original fixtures/tolerances and every raw formula remain unchanged."
+        ],
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed",
+        "publicCandidateBankOmitted": true
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "851eb5b0d457f830e9b8a1b1d61fdb8911666253c42a7ffe3c45790f878f688d",
+      "displayPrecisionAmendment": {
+        "recordedAt": "2026-10-04T15:26:56.716Z",
+        "candidate": {
+          "file": "reports/review-20261003/met-positive-display-candidate-final25.json",
+          "sha256": "159b9ad81703837446bce3888bc98b82e96b4fb1c37e25287726eb800a21c8bf"
+        },
+        "independentPeer": {
+          "file": "reports/review-20261003/met-positive-display-independent-review-final25.json",
+          "sha256": "21b7430ac79ba4e091fbf73bf748e41cd5e1e27e8b6bf6adde3301d96878088d"
+        },
+        "scope": "Report-only display precision repair. For positive session estimates below1kcal, show two decimals rather than rounding the displayed total to0. All raw quantities, formulas, field units/schema, thresholds, sources, original three case outputs, and other display ranges remain unchanged. It is a display choice, not increased physiological accuracy or clinical approval.",
+        "beforeHash": "6ed5a593ca76cea266a88f2cea3db6fc641ac170cd3a8a5becb03d5a0424a879",
+        "afterHash": "851eb5b0d457f830e9b8a1b1d61fdb8911666253c42a7ffe3c45790f878f688d",
+        "originalSourceCasesPreserved": true,
+        "rawFormulaUnchanged": true,
+        "fullMethodConformance": "not-performed",
+        "clinicalApproval": "not-performed"
+      }
+    },
+    "limits": "Os METs do Compêndio Adulto 2024 correspondem a atividades para adultos de 19–59 anos; dados de pessoas ≥60 anos foram excluídos dessa edição. Valores padronizados, inclusive valores estimados, não medem gasto individual. Crianças, idosos e condições clínicas especiais exigem fontes e métodos adequados a essas populações.",
+    "sourceLimitEvidence": {
+      "checkedAt": "2026-10-04T02:52:02.991Z",
+      "scope": "Targeted source reading and authorial documentation, not full method or clinical approval.",
+      "sourceReviewFile": "remaining-native-population-limits-review.json",
+      "sourceReviewSha256": "ba61a9b120a338c518c34ba9f324558b12580e7f5371ea81304b030b45ea44a5",
+      "readingOutcome": "review-outcome-recorded",
+      "unresolved": [
+        "Não foi conferido compêndio próprio para crianças ou adultos idosos, nem todas as atividades locais."
+      ],
+      "fullMethodConformanceReviewed": false,
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed"
     }
   },
-  "review": {
-    "status": "needs-review",
-    "reason": "Revisão documental e clínica independente pendente.",
-    "clinicalValidation": "not-performed"
+  "currentSource": {
+    "file": "apps/website/private/tool-code/gasto-energetico-por-mets/calculator.js",
+    "bytes": 5106,
+    "sha256": "851eb5b0d457f830e9b8a1b1d61fdb8911666253c42a7ffe3c45790f878f688d"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "ad0ad2393e7da02f080f169481cb1d2c4ac34b782812c0eb124ad3d3bcd7d38e",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 4,
+      "sha256": "e0a99c4da827b8ddd1e20b59fe4c35bdf369dc9c88fe164420276a7d0ec7fe07",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    },
+    {
+      "rows": 4,
+      "sha256": "e0a99c4da827b8ddd1e20b59fe4c35bdf369dc9c88fe164420276a7d0ec7fe07",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }

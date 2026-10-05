@@ -1,0 +1,537 @@
+[
+  {
+    "name": "Reject null input",
+    "input": null,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject array input",
+    "input": [],
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject string input",
+    "input": "invalid",
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject numeric input",
+    "input": 1,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field met",
+    "input": {
+      "peso": 70,
+      "min": 30
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "met"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field met",
+    "input": {
+      "met": "",
+      "peso": 70,
+      "min": 30
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "met"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" met",
+    "input": {
+      "met": "NaN",
+      "peso": 70,
+      "min": 30
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "met"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" met",
+    "input": {
+      "met": "Infinity",
+      "peso": 70,
+      "min": 30
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "met"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" met",
+    "input": {
+      "met": "1e309",
+      "peso": 70,
+      "min": 30
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "met"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" met",
+    "input": {
+      "met": "invalid",
+      "peso": 70,
+      "min": 30
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "met"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} met",
+    "input": {
+      "met": {},
+      "peso": 70,
+      "min": 30
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "met"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true met",
+    "input": {
+      "met": true,
+      "peso": 70,
+      "min": 30
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "met"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum met",
+    "input": {
+      "met": 0,
+      "peso": 70,
+      "min": 30
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "met"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum met",
+    "input": {
+      "met": 27.5,
+      "peso": 70,
+      "min": 30
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "met"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field peso",
+    "input": {
+      "met": 8,
+      "min": 30
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "peso"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field peso",
+    "input": {
+      "met": 8,
+      "peso": "",
+      "min": 30
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "peso"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" peso",
+    "input": {
+      "met": 8,
+      "peso": "NaN",
+      "min": 30
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "peso"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" peso",
+    "input": {
+      "met": 8,
+      "peso": "Infinity",
+      "min": 30
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "peso"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" peso",
+    "input": {
+      "met": 8,
+      "peso": "1e309",
+      "min": 30
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "peso"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" peso",
+    "input": {
+      "met": 8,
+      "peso": "invalid",
+      "min": 30
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "peso"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} peso",
+    "input": {
+      "met": 8,
+      "peso": {},
+      "min": 30
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "peso"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true peso",
+    "input": {
+      "met": 8,
+      "peso": true,
+      "min": 30
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "peso"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum peso",
+    "input": {
+      "met": 8,
+      "peso": 18,
+      "min": 30
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "peso"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum peso",
+    "input": {
+      "met": 8,
+      "peso": 330,
+      "min": 30
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "peso"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field min",
+    "input": {
+      "met": 8,
+      "peso": 70
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "min"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field min",
+    "input": {
+      "met": 8,
+      "peso": 70,
+      "min": ""
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "min"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" min",
+    "input": {
+      "met": 8,
+      "peso": 70,
+      "min": "NaN"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "min"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" min",
+    "input": {
+      "met": 8,
+      "peso": 70,
+      "min": "Infinity"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "min"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" min",
+    "input": {
+      "met": 8,
+      "peso": 70,
+      "min": "1e309"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "min"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" min",
+    "input": {
+      "met": 8,
+      "peso": 70,
+      "min": "invalid"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "min"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} min",
+    "input": {
+      "met": 8,
+      "peso": 70,
+      "min": {}
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "min"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true min",
+    "input": {
+      "met": 8,
+      "peso": 70,
+      "min": true
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "min"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum min",
+    "input": {
+      "met": 8,
+      "peso": 70,
+      "min": 0
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "min"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum min",
+    "input": {
+      "met": 8,
+      "peso": 70,
+      "min": 660
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "min"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" sessoes",
+    "input": {
+      "met": 8,
+      "peso": 70,
+      "min": 30,
+      "sessoes": "NaN"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "sessoes"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" sessoes",
+    "input": {
+      "met": 8,
+      "peso": 70,
+      "min": 30,
+      "sessoes": "Infinity"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "sessoes"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" sessoes",
+    "input": {
+      "met": 8,
+      "peso": 70,
+      "min": 30,
+      "sessoes": "1e309"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "sessoes"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" sessoes",
+    "input": {
+      "met": 8,
+      "peso": 70,
+      "min": 30,
+      "sessoes": "invalid"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "sessoes"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} sessoes",
+    "input": {
+      "met": 8,
+      "peso": 70,
+      "min": 30,
+      "sessoes": {}
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "sessoes"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true sessoes",
+    "input": {
+      "met": 8,
+      "peso": 70,
+      "min": 30,
+      "sessoes": true
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "sessoes"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum sessoes",
+    "input": {
+      "met": 8,
+      "peso": 70,
+      "min": 30,
+      "sessoes": 0
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "sessoes"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum sessoes",
+    "input": {
+      "met": 8,
+      "peso": 70,
+      "min": 30,
+      "sessoes": 15.4
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "sessoes"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  }
+]
