@@ -79,3 +79,38 @@ Ergebnis der Formel oder Klassifikation. Interpretation, Vorgehen und Anwendbark
 Apache-2.0 gilt nur für den ELUCENIA-Code. Die Rechte an Instrumenten, Veröffentlichungen, Übersetzungen und Daten verbleiben bei den jeweiligen Rechteinhabern. Bewahren Sie LICENSE und NOTICE auf.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Dokumentierte Ergebnisse
+
+Die folgenden Angaben bewahren die Ausgaben der Methode für synthetische Beispiele. Sie stellen keine unabhängige klinische Validierung dar.
+
+### 1
+
+Hohe Intensität (≥ 6 METs)
+
+| Ergebnisdetails | |
+| --- | --- |
+| Energieverbrauch pro Minute | 9,8 kcal/min |
+| Sitzungsvolumen | 240 MET-min |
+
+
+### 2
+
+Moderate Intensität (3 bis 5,9 METs)
+
+| Ergebnisdetails | |
+| --- | --- |
+| Energieverbrauch pro Minute | 4,9 kcal/min |
+| Sitzungsvolumen | 158 MET-min |
+| Wochenvolumen | 630 MET-min/Woche (erreicht das Ziel von 500 bis 1000) |
+
+
+### 3
+
+Leichte Intensität (< 3 METs)
+
+| Ergebnisdetails | |
+| --- | --- |
+| Energieverbrauch pro Minute | 2,6 kcal/min |
+| Sitzungsvolumen | 150 MET-min |
+

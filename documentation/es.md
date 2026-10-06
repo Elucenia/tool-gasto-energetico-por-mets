@@ -79,3 +79,38 @@ Resultado de la fórmula o clasificación. La interpretación, la conducta y la 
 Apache-2.0 se aplica únicamente al código de ELUCENIA. Los derechos de los instrumentos, publicaciones, traducciones y datos permanecen en manos de sus respectivos titulares. Conserve LICENSE y NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+La información siguiente conserva las salidas del método para ejemplos sintéticos. No constituye una validación clínica independiente.
+
+### 1
+
+Intensidad vigorosa (≥ 6 METs)
+
+| Detalles del resultado | |
+| --- | --- |
+| Gasto por minuto | 9,8 kcal/min |
+| Volumen de la sesión | 240 MET-min |
+
+
+### 2
+
+Intensidad moderada (3 a 5,9 METs)
+
+| Detalles del resultado | |
+| --- | --- |
+| Gasto por minuto | 4,9 kcal/min |
+| Volumen de la sesión | 158 MET-min |
+| Volumen semanal | 630 MET-min/semana (cumple el objetivo de 500 a 1000) |
+
+
+### 3
+
+Intensidad leve (< 3 METs)
+
+| Detalles del resultado | |
+| --- | --- |
+| Gasto por minuto | 2,6 kcal/min |
+| Volumen de la sesión | 150 MET-min |
+

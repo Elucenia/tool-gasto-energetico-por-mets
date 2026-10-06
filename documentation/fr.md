@@ -79,3 +79,38 @@ Résultat de la formule ou de la classification. L’interprétation, la conduit
 Apache-2.0 s’applique uniquement au code d’ELUCENIA. Les droits sur les instruments, publications, traductions et données restent ceux de leurs titulaires respectifs. Conservez LICENSE et NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Résultats documentés
+
+Les informations ci-dessous conservent les sorties de la méthode pour des exemples synthétiques. Elles ne constituent pas une validation clinique indépendante.
+
+### 1
+
+Intensité vigoureuse (≥ 6 METs)
+
+| Détails du résultat | |
+| --- | --- |
+| Dépense par minute | 9,8 kcal/min |
+| Volume de la séance | 240 MET-min |
+
+
+### 2
+
+Intensité modérée (3 à 5,9 METs)
+
+| Détails du résultat | |
+| --- | --- |
+| Dépense par minute | 4,9 kcal/min |
+| Volume de la séance | 158 MET-min |
+| Volume hebdomadaire | 630 MET-min/semaine (atteint l’objectif de 500 à 1000) |
+
+
+### 3
+
+Intensité légère (< 3 METs)
+
+| Détails du résultat | |
+| --- | --- |
+| Dépense par minute | 2,6 kcal/min |
+| Volume de la séance | 150 MET-min |
+

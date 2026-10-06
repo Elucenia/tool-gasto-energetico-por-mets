@@ -226,7 +226,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "METstandard 3,5 m LO 2/kg/min; kcal/min=MET×3,5×kg/200; referência Compendium 2024",
-    "implementationVersion": "gasto-energetico-por-mets@native-2026-10-03+851eb5b0d457",
+    "implementationVersion": "gasto-energetico-por-mets@native-2026-10-05+7db1387ed242",
     "currentMethodSource": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10818145/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -424,7 +424,7 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "851eb5b0d457f830e9b8a1b1d61fdb8911666253c42a7ffe3c45790f878f688d",
+      "implementationHash": "7db1387ed242495a1b14c9e4b82d4b5144d073e48f33ec5428feb1db9f22c3c8",
       "displayPrecisionAmendment": {
         "recordedAt": "2026-10-04T15:26:56.716Z",
         "candidate": {
@@ -442,7 +442,35 @@
         "rawFormulaUnchanged": true,
         "fullMethodConformance": "not-performed",
         "clinicalApproval": "not-performed"
-      }
+      },
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "gasto-energetico-por-mets@native-2026-10-03+851eb5b0d457",
+          "previousImplementationHash": "851eb5b0d457f830e9b8a1b1d61fdb8911666253c42a7ffe3c45790f878f688d",
+          "implementationHash": "7db1387ed242495a1b14c9e4b82d4b5144d073e48f33ec5428feb1db9f22c3c8",
+          "scientificBodySha256": "ed4dd17abac82d6b1e6ca774859c829db8cf0758f5965f94fd13f22f72dc783a",
+          "metadataContractHash": "e6dd556be6a2d22f3b7403a2461d0cc8b2ebd5c5f9771ae905309033e2b7093d",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "Os METs do Compêndio Adulto 2024 correspondem a atividades para adultos de 19–59 anos; dados de pessoas ≥60 anos foram excluídos dessa edição. Valores padronizados, inclusive valores estimados, não medem gasto individual. Crianças, idosos e condições clínicas especiais exigem fontes e métodos adequados a essas populações.",
     "sourceLimitEvidence": {
@@ -461,20 +489,20 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/gasto-energetico-por-mets/calculator.js",
-    "bytes": 5106,
-    "sha256": "851eb5b0d457f830e9b8a1b1d61fdb8911666253c42a7ffe3c45790f878f688d"
+    "bytes": 5311,
+    "sha256": "7db1387ed242495a1b14c9e4b82d4b5144d073e48f33ec5428feb1db9f22c3c8"
   },
-  "sourceToolSha256": "ad0ad2393e7da02f080f169481cb1d2c4ac34b782812c0eb124ad3d3bcd7d38e",
+  "sourceToolSha256": "df0b584ba6b42fdc28f1f797b573932bf80375d008954adf910d3ab01e51a51e",
   "omittedFullReferenceBanks": [
     {
       "rows": 4,
       "sha256": "e0a99c4da827b8ddd1e20b59fe4c35bdf369dc9c88fe164420276a7d0ec7fe07",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     },
     {
       "rows": 4,
       "sha256": "e0a99c4da827b8ddd1e20b59fe4c35bdf369dc9c88fe164420276a7d0ec7fe07",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",

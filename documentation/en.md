@@ -79,3 +79,38 @@ Formula or classification result. Interpretation, care and applicability depend 
 Apache-2.0 applies only to ELUCENIA code. Rights to instruments, publications, translations and data remain with their respective holders. Preserve LICENSE and NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Documented results
+
+The information below preserves the method outputs for synthetic examples. It does not constitute independent clinical validation.
+
+### 1
+
+Vigorous intensity (≥ 6 METs)
+
+| Result details | |
+| --- | --- |
+| Energy expenditure per minute | 9.8 kcal/min |
+| Session volume | 240 MET-min |
+
+
+### 2
+
+Moderate intensity (3 to 5,9 METs)
+
+| Result details | |
+| --- | --- |
+| Energy expenditure per minute | 4.9 kcal/min |
+| Session volume | 158 MET-min |
+| Weekly volume | 630 MET-min/week (meets the goal of 500 to 1000) |
+
+
+### 3
+
+Light intensity (< 3 METs)
+
+| Result details | |
+| --- | --- |
+| Energy expenditure per minute | 2.6 kcal/min |
+| Session volume | 150 MET-min |
+

@@ -1,0 +1,230 @@
+{
+  "schema": "elucenia-public-source-result-preservation-v1",
+  "id": "gasto-energetico-por-mets",
+  "source": {
+    "baselineFile": "reports/review-20261005-completion/public-native-output-baseline-r2/baseline.json",
+    "baselineSha256": "e5f274fa5acc74566e1c3d55afb6bb402ad9928337dd77a2945442f5b6c49439",
+    "previousCommit": "ea261283a2c5fba682355a77aee504b40b108de3",
+    "oldEngineSha256": "851eb5b0d457f830e9b8a1b1d61fdb8911666253c42a7ffe3c45790f878f688d",
+    "currentEngineSha256": "7db1387ed242495a1b14c9e4b82d4b5144d073e48f33ec5428feb1db9f22c3c8"
+  },
+  "scope": "Existing synthetic inputs and same pinned mathematical-function outputs. Clinical interpretation correctness and professional translation are separate unperformed reviews.",
+  "clinicalApproval": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "cases": [
+    {
+      "caseIndex": 0,
+      "name": "8 METs, 70 kg, 30 min: 9,8 kcal/min × 30 = 294 kcal; 240 MET-min",
+      "input": {
+        "met": 8,
+        "peso": 70,
+        "min": 30
+      },
+      "publicOutput": {
+        "id": "gasto-energetico-por-mets",
+        "main": [
+          "294",
+          "kcal"
+        ],
+        "label": "Gasto energético da sessão",
+        "raw": {
+          "kcal": 294,
+          "kcalmin": 9.8,
+          "metmin": 240,
+          "semana": null
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "kcal": 294,
+          "kcalmin": 9.8,
+          "metmin": 240
+        },
+        "level": "info",
+        "verdict": "vigorosa"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "294",
+          "kcal"
+        ],
+        "label": "Gasto energético da sessão",
+        "level": "info",
+        "verdict": "Intensidade vigorosa (≥ 6 METs)",
+        "rows": [
+          [
+            "Gasto por minuto",
+            "9,8 kcal/min"
+          ],
+          [
+            "Volume da sessão",
+            "240 MET-min"
+          ]
+        ],
+        "raw": {
+          "kcal": 294,
+          "kcalmin": 9.8,
+          "metmin": 240,
+          "semana": null
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 1,
+      "name": "3,5 METs, 80 kg, 45 min, 4×/semana: 220,5 kcal; 630 MET-min/semana",
+      "input": {
+        "met": 3.5,
+        "peso": 80,
+        "min": 45,
+        "sessoes": 4
+      },
+      "publicOutput": {
+        "id": "gasto-energetico-por-mets",
+        "main": [
+          "221",
+          "kcal"
+        ],
+        "label": "Gasto energético da sessão",
+        "raw": {
+          "kcal": 220.50000000000003,
+          "kcalmin": 4.9,
+          "metmin": 157.5,
+          "semana": 630
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "kcal": 220.5,
+          "metmin": 157.5,
+          "semana": 630
+        },
+        "verdict": "moderada"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "221",
+          "kcal"
+        ],
+        "label": "Gasto energético da sessão",
+        "level": "info",
+        "verdict": "Intensidade moderada (3 a 5,9 METs)",
+        "rows": [
+          [
+            "Gasto por minuto",
+            "4,9 kcal/min"
+          ],
+          [
+            "Volume da sessão",
+            "158 MET-min"
+          ],
+          [
+            "Volume semanal",
+            "630 MET-min/semana (atinge a meta de 500 a 1.000)"
+          ]
+        ],
+        "raw": {
+          "kcal": 220.50000000000003,
+          "kcalmin": 4.9,
+          "metmin": 157.5,
+          "semana": 630
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 2,
+      "name": "2,5 METs, 60 kg, 60 min: 157,5 kcal (leve)",
+      "input": {
+        "met": 2.5,
+        "peso": 60,
+        "min": 60
+      },
+      "publicOutput": {
+        "id": "gasto-energetico-por-mets",
+        "main": [
+          "158",
+          "kcal"
+        ],
+        "label": "Gasto energético da sessão",
+        "raw": {
+          "kcal": 157.5,
+          "kcalmin": 2.625,
+          "metmin": 150,
+          "semana": null
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "kcal": 157.5
+        },
+        "verdict": "leve"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "158",
+          "kcal"
+        ],
+        "label": "Gasto energético da sessão",
+        "level": "info",
+        "verdict": "Intensidade leve (&lt; 3 METs)",
+        "rows": [
+          [
+            "Gasto por minuto",
+            "2,6 kcal/min"
+          ],
+          [
+            "Volume da sessão",
+            "150 MET-min"
+          ]
+        ],
+        "raw": {
+          "kcal": 157.5,
+          "kcalmin": 2.625,
+          "metmin": 150,
+          "semana": null
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    }
+  ]
+}

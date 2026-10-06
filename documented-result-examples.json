@@ -1,0 +1,1516 @@
+{
+  "id": "gasto-energetico-por-mets",
+  "implementationVersion": "gasto-energetico-por-mets@native-2026-10-05+7db1387ed242",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "8 METs, 70 kg, 30 min: 9,8 kcal/min × 30 = 294 kcal; 240 MET-min",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Gasto por minuto",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "9,8 kcal/min",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Volume da sessão",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "240 MET-min",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Intensidade vigorosa (≥ 6 METs)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "3,5 METs, 80 kg, 45 min, 4×/semana: 220,5 kcal; 630 MET-min/semana",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Gasto por minuto",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "4,9 kcal/min",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Volume da sessão",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "158 MET-min",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Volume semanal",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "630 MET-min/semana (atinge a meta de 500 a 1.000)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Intensidade moderada (3 a 5,9 METs)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "2,5 METs, 60 kg, 60 min: 157,5 kcal (leve)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Gasto por minuto",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "2,6 kcal/min",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Volume da sessão",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "150 MET-min",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Intensidade leve (< 3 METs)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "8 METs, 70 kg, 30 min: 9,8 kcal/min × 30 = 294 kcal; 240 MET-min",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Energy expenditure per minute",
+                "locale": "en",
+                "template": "documented-authored-160455b44d85e248272d"
+              },
+              "value": {
+                "text": "9.8 kcal/min",
+                "locale": "en",
+                "template": "documented-authored-fbeceaf784ec8139356d",
+                "sourceNumbers": [
+                  9.8
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Session volume",
+                "locale": "en",
+                "template": "documented-authored-2fde25dbe28754d13cc9"
+              },
+              "value": {
+                "text": "240 MET-min",
+                "locale": "en",
+                "template": "documented-authored-2132ff7d80660884dfbd",
+                "sourceNumbers": [
+                  240
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Vigorous intensity (≥ 6 METs)",
+            "locale": "en",
+            "template": "documented-authored-1b67d69ca5e01dbb5562"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "3,5 METs, 80 kg, 45 min, 4×/semana: 220,5 kcal; 630 MET-min/semana",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Energy expenditure per minute",
+                "locale": "en",
+                "template": "documented-authored-160455b44d85e248272d"
+              },
+              "value": {
+                "text": "4.9 kcal/min",
+                "locale": "en",
+                "template": "documented-authored-fbeceaf784ec8139356d",
+                "sourceNumbers": [
+                  4.9
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Session volume",
+                "locale": "en",
+                "template": "documented-authored-2fde25dbe28754d13cc9"
+              },
+              "value": {
+                "text": "158 MET-min",
+                "locale": "en",
+                "template": "documented-authored-2132ff7d80660884dfbd",
+                "sourceNumbers": [
+                  158
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Weekly volume",
+                "locale": "en",
+                "template": "documented-authored-8f84c8491b5b2853015b"
+              },
+              "value": {
+                "text": "630 MET-min/week (meets the goal of 500 to 1000)",
+                "locale": "en",
+                "template": "documented-authored-a1e618c8acb650ecae12",
+                "sourceNumbers": [
+                  630
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Moderate intensity (3 to 5,9 METs)",
+            "locale": "en",
+            "template": "documented-authored-35cf9fed9d53ca75ff22"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "2,5 METs, 60 kg, 60 min: 157,5 kcal (leve)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Energy expenditure per minute",
+                "locale": "en",
+                "template": "documented-authored-160455b44d85e248272d"
+              },
+              "value": {
+                "text": "2.6 kcal/min",
+                "locale": "en",
+                "template": "documented-authored-fbeceaf784ec8139356d",
+                "sourceNumbers": [
+                  2.6
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Session volume",
+                "locale": "en",
+                "template": "documented-authored-2fde25dbe28754d13cc9"
+              },
+              "value": {
+                "text": "150 MET-min",
+                "locale": "en",
+                "template": "documented-authored-2132ff7d80660884dfbd",
+                "sourceNumbers": [
+                  150
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Light intensity (< 3 METs)",
+            "locale": "en",
+            "template": "documented-authored-7636c8022cbb02ef857c"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "8 METs, 70 kg, 30 min: 9,8 kcal/min × 30 = 294 kcal; 240 MET-min",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Gasto por minuto",
+                "locale": "es",
+                "template": "documented-authored-160455b44d85e248272d"
+              },
+              "value": {
+                "text": "9,8 kcal/min",
+                "locale": "es",
+                "template": "documented-authored-fbeceaf784ec8139356d",
+                "sourceNumbers": [
+                  9.8
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Volumen de la sesión",
+                "locale": "es",
+                "template": "documented-authored-2fde25dbe28754d13cc9"
+              },
+              "value": {
+                "text": "240 MET-min",
+                "locale": "es",
+                "template": "documented-authored-2132ff7d80660884dfbd",
+                "sourceNumbers": [
+                  240
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Intensidad vigorosa (≥ 6 METs)",
+            "locale": "es",
+            "template": "documented-authored-1b67d69ca5e01dbb5562"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "3,5 METs, 80 kg, 45 min, 4×/semana: 220,5 kcal; 630 MET-min/semana",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Gasto por minuto",
+                "locale": "es",
+                "template": "documented-authored-160455b44d85e248272d"
+              },
+              "value": {
+                "text": "4,9 kcal/min",
+                "locale": "es",
+                "template": "documented-authored-fbeceaf784ec8139356d",
+                "sourceNumbers": [
+                  4.9
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Volumen de la sesión",
+                "locale": "es",
+                "template": "documented-authored-2fde25dbe28754d13cc9"
+              },
+              "value": {
+                "text": "158 MET-min",
+                "locale": "es",
+                "template": "documented-authored-2132ff7d80660884dfbd",
+                "sourceNumbers": [
+                  158
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Volumen semanal",
+                "locale": "es",
+                "template": "documented-authored-8f84c8491b5b2853015b"
+              },
+              "value": {
+                "text": "630 MET-min/semana (cumple el objetivo de 500 a 1000)",
+                "locale": "es",
+                "template": "documented-authored-a1e618c8acb650ecae12",
+                "sourceNumbers": [
+                  630
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Intensidad moderada (3 a 5,9 METs)",
+            "locale": "es",
+            "template": "documented-authored-35cf9fed9d53ca75ff22"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "2,5 METs, 60 kg, 60 min: 157,5 kcal (leve)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Gasto por minuto",
+                "locale": "es",
+                "template": "documented-authored-160455b44d85e248272d"
+              },
+              "value": {
+                "text": "2,6 kcal/min",
+                "locale": "es",
+                "template": "documented-authored-fbeceaf784ec8139356d",
+                "sourceNumbers": [
+                  2.6
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Volumen de la sesión",
+                "locale": "es",
+                "template": "documented-authored-2fde25dbe28754d13cc9"
+              },
+              "value": {
+                "text": "150 MET-min",
+                "locale": "es",
+                "template": "documented-authored-2132ff7d80660884dfbd",
+                "sourceNumbers": [
+                  150
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Intensidad leve (< 3 METs)",
+            "locale": "es",
+            "template": "documented-authored-7636c8022cbb02ef857c"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "8 METs, 70 kg, 30 min: 9,8 kcal/min × 30 = 294 kcal; 240 MET-min",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Dépense par minute",
+                "locale": "fr",
+                "template": "documented-authored-160455b44d85e248272d"
+              },
+              "value": {
+                "text": "9,8 kcal/min",
+                "locale": "fr",
+                "template": "documented-authored-fbeceaf784ec8139356d",
+                "sourceNumbers": [
+                  9.8
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Volume de la séance",
+                "locale": "fr",
+                "template": "documented-authored-2fde25dbe28754d13cc9"
+              },
+              "value": {
+                "text": "240 MET-min",
+                "locale": "fr",
+                "template": "documented-authored-2132ff7d80660884dfbd",
+                "sourceNumbers": [
+                  240
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Intensité vigoureuse (≥ 6 METs)",
+            "locale": "fr",
+            "template": "documented-authored-1b67d69ca5e01dbb5562"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "3,5 METs, 80 kg, 45 min, 4×/semana: 220,5 kcal; 630 MET-min/semana",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Dépense par minute",
+                "locale": "fr",
+                "template": "documented-authored-160455b44d85e248272d"
+              },
+              "value": {
+                "text": "4,9 kcal/min",
+                "locale": "fr",
+                "template": "documented-authored-fbeceaf784ec8139356d",
+                "sourceNumbers": [
+                  4.9
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Volume de la séance",
+                "locale": "fr",
+                "template": "documented-authored-2fde25dbe28754d13cc9"
+              },
+              "value": {
+                "text": "158 MET-min",
+                "locale": "fr",
+                "template": "documented-authored-2132ff7d80660884dfbd",
+                "sourceNumbers": [
+                  158
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Volume hebdomadaire",
+                "locale": "fr",
+                "template": "documented-authored-8f84c8491b5b2853015b"
+              },
+              "value": {
+                "text": "630 MET-min/semaine (atteint l’objectif de 500 à 1000)",
+                "locale": "fr",
+                "template": "documented-authored-a1e618c8acb650ecae12",
+                "sourceNumbers": [
+                  630
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Intensité modérée (3 à 5,9 METs)",
+            "locale": "fr",
+            "template": "documented-authored-35cf9fed9d53ca75ff22"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "2,5 METs, 60 kg, 60 min: 157,5 kcal (leve)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Dépense par minute",
+                "locale": "fr",
+                "template": "documented-authored-160455b44d85e248272d"
+              },
+              "value": {
+                "text": "2,6 kcal/min",
+                "locale": "fr",
+                "template": "documented-authored-fbeceaf784ec8139356d",
+                "sourceNumbers": [
+                  2.6
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Volume de la séance",
+                "locale": "fr",
+                "template": "documented-authored-2fde25dbe28754d13cc9"
+              },
+              "value": {
+                "text": "150 MET-min",
+                "locale": "fr",
+                "template": "documented-authored-2132ff7d80660884dfbd",
+                "sourceNumbers": [
+                  150
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Intensité légère (< 3 METs)",
+            "locale": "fr",
+            "template": "documented-authored-7636c8022cbb02ef857c"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "8 METs, 70 kg, 30 min: 9,8 kcal/min × 30 = 294 kcal; 240 MET-min",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Energieverbrauch pro Minute",
+                "locale": "de",
+                "template": "documented-authored-160455b44d85e248272d"
+              },
+              "value": {
+                "text": "9,8 kcal/min",
+                "locale": "de",
+                "template": "documented-authored-fbeceaf784ec8139356d",
+                "sourceNumbers": [
+                  9.8
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Sitzungsvolumen",
+                "locale": "de",
+                "template": "documented-authored-2fde25dbe28754d13cc9"
+              },
+              "value": {
+                "text": "240 MET-min",
+                "locale": "de",
+                "template": "documented-authored-2132ff7d80660884dfbd",
+                "sourceNumbers": [
+                  240
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Hohe Intensität (≥ 6 METs)",
+            "locale": "de",
+            "template": "documented-authored-1b67d69ca5e01dbb5562"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "3,5 METs, 80 kg, 45 min, 4×/semana: 220,5 kcal; 630 MET-min/semana",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Energieverbrauch pro Minute",
+                "locale": "de",
+                "template": "documented-authored-160455b44d85e248272d"
+              },
+              "value": {
+                "text": "4,9 kcal/min",
+                "locale": "de",
+                "template": "documented-authored-fbeceaf784ec8139356d",
+                "sourceNumbers": [
+                  4.9
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Sitzungsvolumen",
+                "locale": "de",
+                "template": "documented-authored-2fde25dbe28754d13cc9"
+              },
+              "value": {
+                "text": "158 MET-min",
+                "locale": "de",
+                "template": "documented-authored-2132ff7d80660884dfbd",
+                "sourceNumbers": [
+                  158
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Wochenvolumen",
+                "locale": "de",
+                "template": "documented-authored-8f84c8491b5b2853015b"
+              },
+              "value": {
+                "text": "630 MET-min/Woche (erreicht das Ziel von 500 bis 1000)",
+                "locale": "de",
+                "template": "documented-authored-a1e618c8acb650ecae12",
+                "sourceNumbers": [
+                  630
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Moderate Intensität (3 bis 5,9 METs)",
+            "locale": "de",
+            "template": "documented-authored-35cf9fed9d53ca75ff22"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "2,5 METs, 60 kg, 60 min: 157,5 kcal (leve)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Energieverbrauch pro Minute",
+                "locale": "de",
+                "template": "documented-authored-160455b44d85e248272d"
+              },
+              "value": {
+                "text": "2,6 kcal/min",
+                "locale": "de",
+                "template": "documented-authored-fbeceaf784ec8139356d",
+                "sourceNumbers": [
+                  2.6
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Sitzungsvolumen",
+                "locale": "de",
+                "template": "documented-authored-2fde25dbe28754d13cc9"
+              },
+              "value": {
+                "text": "150 MET-min",
+                "locale": "de",
+                "template": "documented-authored-2132ff7d80660884dfbd",
+                "sourceNumbers": [
+                  150
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Leichte Intensität (< 3 METs)",
+            "locale": "de",
+            "template": "documented-authored-7636c8022cbb02ef857c"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "8 METs, 70 kg, 30 min: 9,8 kcal/min × 30 = 294 kcal; 240 MET-min",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Dispendio per minuto",
+                "locale": "it",
+                "template": "documented-authored-160455b44d85e248272d"
+              },
+              "value": {
+                "text": "9,8 kcal/min",
+                "locale": "it",
+                "template": "documented-authored-fbeceaf784ec8139356d",
+                "sourceNumbers": [
+                  9.8
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Volume della seduta",
+                "locale": "it",
+                "template": "documented-authored-2fde25dbe28754d13cc9"
+              },
+              "value": {
+                "text": "240 MET-min",
+                "locale": "it",
+                "template": "documented-authored-2132ff7d80660884dfbd",
+                "sourceNumbers": [
+                  240
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Intensità vigorosa (≥ 6 METs)",
+            "locale": "it",
+            "template": "documented-authored-1b67d69ca5e01dbb5562"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "3,5 METs, 80 kg, 45 min, 4×/semana: 220,5 kcal; 630 MET-min/semana",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Dispendio per minuto",
+                "locale": "it",
+                "template": "documented-authored-160455b44d85e248272d"
+              },
+              "value": {
+                "text": "4,9 kcal/min",
+                "locale": "it",
+                "template": "documented-authored-fbeceaf784ec8139356d",
+                "sourceNumbers": [
+                  4.9
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Volume della seduta",
+                "locale": "it",
+                "template": "documented-authored-2fde25dbe28754d13cc9"
+              },
+              "value": {
+                "text": "158 MET-min",
+                "locale": "it",
+                "template": "documented-authored-2132ff7d80660884dfbd",
+                "sourceNumbers": [
+                  158
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Volume settimanale",
+                "locale": "it",
+                "template": "documented-authored-8f84c8491b5b2853015b"
+              },
+              "value": {
+                "text": "630 MET-min/settimana (raggiunge l’obiettivo di 500 a 1000)",
+                "locale": "it",
+                "template": "documented-authored-a1e618c8acb650ecae12",
+                "sourceNumbers": [
+                  630
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Intensità moderata (3 a 5,9 METs)",
+            "locale": "it",
+            "template": "documented-authored-35cf9fed9d53ca75ff22"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "2,5 METs, 60 kg, 60 min: 157,5 kcal (leve)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Dispendio per minuto",
+                "locale": "it",
+                "template": "documented-authored-160455b44d85e248272d"
+              },
+              "value": {
+                "text": "2,6 kcal/min",
+                "locale": "it",
+                "template": "documented-authored-fbeceaf784ec8139356d",
+                "sourceNumbers": [
+                  2.6
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Volume della seduta",
+                "locale": "it",
+                "template": "documented-authored-2fde25dbe28754d13cc9"
+              },
+              "value": {
+                "text": "150 MET-min",
+                "locale": "it",
+                "template": "documented-authored-2132ff7d80660884dfbd",
+                "sourceNumbers": [
+                  150
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Intensità lieve (< 3 METs)",
+            "locale": "it",
+            "template": "documented-authored-7636c8022cbb02ef857c"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "8 METs, 70 kg, 30 min: 9,8 kcal/min × 30 = 294 kcal; 240 MET-min",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "الإنفاق لكل دقيقة",
+                "locale": "ar",
+                "template": "documented-authored-160455b44d85e248272d"
+              },
+              "value": {
+                "text": "٩٫٨ kcal/min",
+                "locale": "ar",
+                "template": "documented-authored-fbeceaf784ec8139356d",
+                "sourceNumbers": [
+                  9.8
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "حجم الجلسة",
+                "locale": "ar",
+                "template": "documented-authored-2fde25dbe28754d13cc9"
+              },
+              "value": {
+                "text": "٢٤٠ MET-min",
+                "locale": "ar",
+                "template": "documented-authored-2132ff7d80660884dfbd",
+                "sourceNumbers": [
+                  240
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "شدة قوية (≥ 6 METs)",
+            "locale": "ar",
+            "template": "documented-authored-1b67d69ca5e01dbb5562"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "3,5 METs, 80 kg, 45 min, 4×/semana: 220,5 kcal; 630 MET-min/semana",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "الإنفاق لكل دقيقة",
+                "locale": "ar",
+                "template": "documented-authored-160455b44d85e248272d"
+              },
+              "value": {
+                "text": "٤٫٩ kcal/min",
+                "locale": "ar",
+                "template": "documented-authored-fbeceaf784ec8139356d",
+                "sourceNumbers": [
+                  4.9
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "حجم الجلسة",
+                "locale": "ar",
+                "template": "documented-authored-2fde25dbe28754d13cc9"
+              },
+              "value": {
+                "text": "١٥٨ MET-min",
+                "locale": "ar",
+                "template": "documented-authored-2132ff7d80660884dfbd",
+                "sourceNumbers": [
+                  158
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "الحجم الأسبوعي",
+                "locale": "ar",
+                "template": "documented-authored-8f84c8491b5b2853015b"
+              },
+              "value": {
+                "text": "٦٣٠ MET-min/أسبوع (يحقق الهدف من 500 إلى 1000)",
+                "locale": "ar",
+                "template": "documented-authored-a1e618c8acb650ecae12",
+                "sourceNumbers": [
+                  630
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "شدة متوسطة (3 إلى 5,9 METs)",
+            "locale": "ar",
+            "template": "documented-authored-35cf9fed9d53ca75ff22"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "2,5 METs, 60 kg, 60 min: 157,5 kcal (leve)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "الإنفاق لكل دقيقة",
+                "locale": "ar",
+                "template": "documented-authored-160455b44d85e248272d"
+              },
+              "value": {
+                "text": "٢٫٦ kcal/min",
+                "locale": "ar",
+                "template": "documented-authored-fbeceaf784ec8139356d",
+                "sourceNumbers": [
+                  2.6
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "حجم الجلسة",
+                "locale": "ar",
+                "template": "documented-authored-2fde25dbe28754d13cc9"
+              },
+              "value": {
+                "text": "١٥٠ MET-min",
+                "locale": "ar",
+                "template": "documented-authored-2132ff7d80660884dfbd",
+                "sourceNumbers": [
+                  150
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "شدة خفيفة (< 3 METs)",
+            "locale": "ar",
+            "template": "documented-authored-7636c8022cbb02ef857c"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "8 METs, 70 kg, 30 min: 9,8 kcal/min × 30 = 294 kcal; 240 MET-min",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "每分钟能量消耗",
+                "locale": "zh",
+                "template": "documented-authored-160455b44d85e248272d"
+              },
+              "value": {
+                "text": "9.8 kcal/min",
+                "locale": "zh",
+                "template": "documented-authored-fbeceaf784ec8139356d",
+                "sourceNumbers": [
+                  9.8
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "训练量",
+                "locale": "zh",
+                "template": "documented-authored-2fde25dbe28754d13cc9"
+              },
+              "value": {
+                "text": "240 MET-min",
+                "locale": "zh",
+                "template": "documented-authored-2132ff7d80660884dfbd",
+                "sourceNumbers": [
+                  240
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "高强度（≥ 6 METs）",
+            "locale": "zh",
+            "template": "documented-authored-1b67d69ca5e01dbb5562"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "3,5 METs, 80 kg, 45 min, 4×/semana: 220,5 kcal; 630 MET-min/semana",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "每分钟能量消耗",
+                "locale": "zh",
+                "template": "documented-authored-160455b44d85e248272d"
+              },
+              "value": {
+                "text": "4.9 kcal/min",
+                "locale": "zh",
+                "template": "documented-authored-fbeceaf784ec8139356d",
+                "sourceNumbers": [
+                  4.9
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "训练量",
+                "locale": "zh",
+                "template": "documented-authored-2fde25dbe28754d13cc9"
+              },
+              "value": {
+                "text": "158 MET-min",
+                "locale": "zh",
+                "template": "documented-authored-2132ff7d80660884dfbd",
+                "sourceNumbers": [
+                  158
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "每周总量",
+                "locale": "zh",
+                "template": "documented-authored-8f84c8491b5b2853015b"
+              },
+              "value": {
+                "text": "630 MET-min/周（达到 500 到 1000 的目标）",
+                "locale": "zh",
+                "template": "documented-authored-a1e618c8acb650ecae12",
+                "sourceNumbers": [
+                  630
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "中等强度（3 到 5,9 METs）",
+            "locale": "zh",
+            "template": "documented-authored-35cf9fed9d53ca75ff22"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "2,5 METs, 60 kg, 60 min: 157,5 kcal (leve)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "每分钟能量消耗",
+                "locale": "zh",
+                "template": "documented-authored-160455b44d85e248272d"
+              },
+              "value": {
+                "text": "2.6 kcal/min",
+                "locale": "zh",
+                "template": "documented-authored-fbeceaf784ec8139356d",
+                "sourceNumbers": [
+                  2.6
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "训练量",
+                "locale": "zh",
+                "template": "documented-authored-2fde25dbe28754d13cc9"
+              },
+              "value": {
+                "text": "150 MET-min",
+                "locale": "zh",
+                "template": "documented-authored-2132ff7d80660884dfbd",
+                "sourceNumbers": [
+                  150
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "轻度强度（< 3 METs）",
+            "locale": "zh",
+            "template": "documented-authored-7636c8022cbb02ef857c"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "8 METs, 70 kg, 30 min: 9,8 kcal/min × 30 = 294 kcal; 240 MET-min",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "1分あたりの消費量",
+                "locale": "ja",
+                "template": "documented-authored-160455b44d85e248272d"
+              },
+              "value": {
+                "text": "9.8 kcal/min",
+                "locale": "ja",
+                "template": "documented-authored-fbeceaf784ec8139356d",
+                "sourceNumbers": [
+                  9.8
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "セッション量",
+                "locale": "ja",
+                "template": "documented-authored-2fde25dbe28754d13cc9"
+              },
+              "value": {
+                "text": "240 MET-min",
+                "locale": "ja",
+                "template": "documented-authored-2132ff7d80660884dfbd",
+                "sourceNumbers": [
+                  240
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "高強度（≥ 6 METs）",
+            "locale": "ja",
+            "template": "documented-authored-1b67d69ca5e01dbb5562"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "3,5 METs, 80 kg, 45 min, 4×/semana: 220,5 kcal; 630 MET-min/semana",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "1分あたりの消費量",
+                "locale": "ja",
+                "template": "documented-authored-160455b44d85e248272d"
+              },
+              "value": {
+                "text": "4.9 kcal/min",
+                "locale": "ja",
+                "template": "documented-authored-fbeceaf784ec8139356d",
+                "sourceNumbers": [
+                  4.9
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "セッション量",
+                "locale": "ja",
+                "template": "documented-authored-2fde25dbe28754d13cc9"
+              },
+              "value": {
+                "text": "158 MET-min",
+                "locale": "ja",
+                "template": "documented-authored-2132ff7d80660884dfbd",
+                "sourceNumbers": [
+                  158
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "週間量",
+                "locale": "ja",
+                "template": "documented-authored-8f84c8491b5b2853015b"
+              },
+              "value": {
+                "text": "630 MET-min/週（500～1000 の目標を満たす）",
+                "locale": "ja",
+                "template": "documented-authored-a1e618c8acb650ecae12",
+                "sourceNumbers": [
+                  630
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "中等度の強度（3～5,9 METs）",
+            "locale": "ja",
+            "template": "documented-authored-35cf9fed9d53ca75ff22"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "2,5 METs, 60 kg, 60 min: 157,5 kcal (leve)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "1分あたりの消費量",
+                "locale": "ja",
+                "template": "documented-authored-160455b44d85e248272d"
+              },
+              "value": {
+                "text": "2.6 kcal/min",
+                "locale": "ja",
+                "template": "documented-authored-fbeceaf784ec8139356d",
+                "sourceNumbers": [
+                  2.6
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "セッション量",
+                "locale": "ja",
+                "template": "documented-authored-2fde25dbe28754d13cc9"
+              },
+              "value": {
+                "text": "150 MET-min",
+                "locale": "ja",
+                "template": "documented-authored-2132ff7d80660884dfbd",
+                "sourceNumbers": [
+                  150
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "軽度の強度（< 3 METs）",
+            "locale": "ja",
+            "template": "documented-authored-7636c8022cbb02ef857c"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "8 METs, 70 kg, 30 min: 9,8 kcal/min × 30 = 294 kcal; 240 MET-min",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "प्रति मिनट व्यय",
+                "locale": "hi",
+                "template": "documented-authored-160455b44d85e248272d"
+              },
+              "value": {
+                "text": "9.8 kcal/min",
+                "locale": "hi",
+                "template": "documented-authored-fbeceaf784ec8139356d",
+                "sourceNumbers": [
+                  9.8
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "सत्र का आयतन",
+                "locale": "hi",
+                "template": "documented-authored-2fde25dbe28754d13cc9"
+              },
+              "value": {
+                "text": "240 MET-min",
+                "locale": "hi",
+                "template": "documented-authored-2132ff7d80660884dfbd",
+                "sourceNumbers": [
+                  240
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "तीव्र तीव्रता (≥ 6 METs)",
+            "locale": "hi",
+            "template": "documented-authored-1b67d69ca5e01dbb5562"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "3,5 METs, 80 kg, 45 min, 4×/semana: 220,5 kcal; 630 MET-min/semana",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "प्रति मिनट व्यय",
+                "locale": "hi",
+                "template": "documented-authored-160455b44d85e248272d"
+              },
+              "value": {
+                "text": "4.9 kcal/min",
+                "locale": "hi",
+                "template": "documented-authored-fbeceaf784ec8139356d",
+                "sourceNumbers": [
+                  4.9
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "सत्र का आयतन",
+                "locale": "hi",
+                "template": "documented-authored-2fde25dbe28754d13cc9"
+              },
+              "value": {
+                "text": "158 MET-min",
+                "locale": "hi",
+                "template": "documented-authored-2132ff7d80660884dfbd",
+                "sourceNumbers": [
+                  158
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "साप्ताहिक आयतन",
+                "locale": "hi",
+                "template": "documented-authored-8f84c8491b5b2853015b"
+              },
+              "value": {
+                "text": "630 MET-min/सप्ताह (500 से 1000 के लक्ष्य को पूरा करता है)",
+                "locale": "hi",
+                "template": "documented-authored-a1e618c8acb650ecae12",
+                "sourceNumbers": [
+                  630
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "मध्यम तीव्रता (3 से 5,9 METs)",
+            "locale": "hi",
+            "template": "documented-authored-35cf9fed9d53ca75ff22"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "2,5 METs, 60 kg, 60 min: 157,5 kcal (leve)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "प्रति मिनट व्यय",
+                "locale": "hi",
+                "template": "documented-authored-160455b44d85e248272d"
+              },
+              "value": {
+                "text": "2.6 kcal/min",
+                "locale": "hi",
+                "template": "documented-authored-fbeceaf784ec8139356d",
+                "sourceNumbers": [
+                  2.6
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "सत्र का आयतन",
+                "locale": "hi",
+                "template": "documented-authored-2fde25dbe28754d13cc9"
+              },
+              "value": {
+                "text": "150 MET-min",
+                "locale": "hi",
+                "template": "documented-authored-2132ff7d80660884dfbd",
+                "sourceNumbers": [
+                  150
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "हल्की तीव्रता (< 3 METs)",
+            "locale": "hi",
+            "template": "documented-authored-7636c8022cbb02ef857c"
+          },
+          "level": "info"
+        }
+      }
+    ]
+  }
+}
